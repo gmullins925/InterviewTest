@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using InterviewTest.Customers;
 using InterviewTest.Products;
 
@@ -8,6 +9,7 @@ namespace InterviewTest.Orders
     {
         ICustomer Buyer { get; }
         string OrderNumber { get; }
+        DateTime GetNow();
         List<OrderedProduct> Products { get; }
 
         void AddProduct(Products.IProduct product);

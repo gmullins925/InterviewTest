@@ -1,5 +1,6 @@
 ﻿using InterviewTest.Customers;
 using InterviewTest.Products;
+using System;
 using System.Collections.Generic;
 
 namespace InterviewTest.Orders
@@ -14,6 +15,10 @@ namespace InterviewTest.Orders
         }
 
         public string OrderNumber { get; private set; }
+        public DateTime GetNow()
+        {
+            return DateTime.Now;
+		}
         public ICustomer Buyer { get; private set; }
         public List<OrderedProduct> Products { get; private set; }
 
