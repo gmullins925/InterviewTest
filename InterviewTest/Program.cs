@@ -11,9 +11,8 @@ namespace InterviewTest
     {
         private static readonly OrderRepository orderRepo = new OrderRepository();
         private static readonly ReturnRepository returnRepo = new ReturnRepository();
-        static void 
 
-        static void Main(string[] args)
+		static void Main(string[] args)
         {
             ProcessTruckAccessoriesExample();
             ProcessCarDealershipExample();
